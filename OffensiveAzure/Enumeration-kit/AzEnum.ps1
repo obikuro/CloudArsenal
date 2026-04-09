@@ -12,7 +12,7 @@
     Author  : Edrian
     Module  : AzEnum
     Version : 2.1.0
-    Usage   : Import-Module .\AzEnum.psm1
+    Usage   : Import-Module .\AzEnum.ps1
               Enumerate-AzResources -Token "eyJ0eXAi..."
               Enumerate-AzResources -Token "eyJ0eXAi..." -ExportJson ".\results.json" -ThrottleMs 400
 #>
@@ -508,5 +508,4 @@ function Enumerate-AzResources {
     Write-Host ""
 }
 
-# ─────────────────────────────────────────────────────────────────────────────
-Export-ModuleMember -Function Enumerate-AzResources
+
